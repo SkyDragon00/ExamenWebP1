@@ -1,19 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Website</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <style>
+        .material-symbols-rounded {
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
 </head>
+
 <body>
-    <nav class="navbar">
-        <ul>
-            <li class="link"><img src="./img/dragonlogo.jpg" alt="dra"></li>
-            <li class="link">link</li>
-            <li class="link">link</li>
-            <li class="link">link</li>
-        </ul>
-    </nav>
+    <header class="header">
+
+        <img src="./assets/Logo.png" alt="Jadoo logo" class="header__logo">
+
+        <div class="header__nav">
+            <nav class="nav">
+                <div class="nav__menu">
+                    <ul class="nav__menu-list">
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Bookings</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__user">
+                    <ul class="nav__user-list">
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#" class="nav__user-signup">Sign up</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__language">
+                    <span class="nav__language-text">
+                        EN
+                        <span class="material-symbols-rounded">
+                            keyboard_arrow_down
+                        </span>
+                    </span>
+                </div>
+            </nav>
+        </div>
+
+        <div class="header__menu" style="display: none;">
+            <span class="material-symbols-rounded">
+                menu
+            </span>
+        </div>
+
+    </header>
+
+    <body class="content">
+        <section class="hero">
+            <p class="hero__subtitle">
+                BEST DESTINATIONS AROUND THE WORLD
+            </p>
+
+            <h1 class="hero__title">
+                Travel, enjoy and live a new and full life
+            </h1>
+
+            <p class="hero__description">
+                Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed
+                listening.
+                Park gate sell they west hard for the.
+            </p>
+
+            <div class="hero__buttons">
+                <button class="hero__button">
+                    Find out more
+                </button>
+
+                <span class="hero__play-demo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#df6951">
+                        <path
+                            d="m418-332 202-129q11-7 11-19t-11-19L418-628q-11-8-23-1.5T383-609v258q0 14 12 20.5t23-1.5Zm62 252q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Z" />
+                    </svg>
+                    Play demo
+                </span>
+            </div>
+
+            <img src="./assets/Picture1.png" alt="Travel image" class="hero__image">
+
+        </section>
+
+        <section class="category">
+            <p class="category__subtitle">
+                CATEGORY
+            </p>
+            <h2 class="category__title">
+                We Offer Best Services
+            </h2>
+
+            <div class="category__cards">
+                <div class="category__card">
+                    <img src="./assets/Group 48.png" alt="Antena parabólica" class="category__card-image">
+
+                    <div class="category__card-content">
+                        <h3 class="category__card-title">
+                            Calculated Weather
+                        </h3>
+                        <p>
+                            Built Wicket longer admire do barton vanity itself do in it.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <img src="./assets/Group 51.png" alt="Antena parabólica" class="category__card-image">
+
+                    <div class="category__card-content">
+                        <h3 class="category__card-title">
+                            Best Flights
+                        </h3>
+                        <p>
+                            Engrossed listening. Park gate sell they west hard for the.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <img src="./assets/Group 50.png" alt="Antena parabólica" class="category__card-image">
+
+                    <div class="category__card-content">
+                        <h3 class="category__card-title">
+                            Local Events
+                        </h3>
+                        <p>
+                            Barton vanity itself do in it. Preferd to men it engrossed listening.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="category__card">
+                    <img src="./assets/Group 49.png" alt="Antena parabólica" class="category__card-image">
+
+                    <div class="category__card-content">
+                        <h3 class="category__card-title">
+                            Customization
+                        </h3>
+                        <p>
+                            We deliver outsourced aviation services for military customers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="top-selling">
+            <p class="top-selling__subtitle">
+                Top Selling
+            </p>
+            <h2 class="top-selling__title">
+                We Offer Best Services
+            </h2>
+
+            <div class="top-selling__cards">
+                <div class="top-selling__card">
+                    <img src="./assets/Rectangle 14.png" alt="" class="top-selling__card-image">
+
+                    <div class="top-selling__card-content">
+                        <div class="top-selling__card-content-top">
+                            <span class="top-selling__card-content-top-location">
+                                Rome, Italy
+                            </span>
+                            <span class="top-selling__card-content-top-price">
+                                $5,42k
+                            </span>
+                        </div>
+
+                        <div class="top-selling__card-content-bottom">
+                            <span class="material-symbols-rounded">
+                                navigation
+                            </span>
+                            <span>
+                                4 Days Trip
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-selling__card">
+                    <img src="./assets/Rectangle 14.png" alt="" class="top-selling__card-image">
+
+                    <div class="top-selling__card-content">
+                        <div class="top-selling__card-content-top">
+                            <span class="top-selling__card-content-top-location">
+                                Rome, Italy
+                            </span>
+                            <span class="top-selling__card-content-top-price">
+                                $5,42k
+                            </span>
+                        </div>
+
+                        <div class="top-selling__card-content-bottom">
+                            <span class="material-symbols-rounded">
+                                navigation
+                            </span>
+                            <span>
+                                4 Days Trip
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-selling__card">
+                    <img src="./assets/Rectangle 14.png" alt="" class="top-selling__card-image">
+
+                    <div class="top-selling__card-content">
+                        <div class="top-selling__card-content-top">
+                            <span class="top-selling__card-content-top-location">
+                                Rome, Italy
+                            </span>
+                            <span class="top-selling__card-content-top-price">
+                                $5,42k
+                            </span>
+                        </div>
+
+                        <div class="top-selling__card-content-bottom">
+                            <span class="material-symbols-rounded">
+                                navigation
+                            </span>
+                            <span>
+                                4 Days Trip
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="easy-fast">
+            <div class="easy-fast__content">
+                <p class="easy-fast__content-subtitle">
+                    Easy and Fast
+                </p>
+                <h2 class="easy-fast__content-title">
+                    Book your next trip in 3 easy steps
+                </h2>
+
+                <div class="easy-fast__content-steps">
+                    <div class="easy-fast__content-step">
+                        <img src="./assets/Group 7.png" alt="" class="easy-fast__content-steps-image">
+
+                        <div class="easy-fast__content-steps-content">
+                            <h3 class="easy-fast__content-steps-title">
+                                Choose Destination
+                            </h3>
+                            <p class="easy-fast__content-steps-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="easy-fast__content-step">
+                        <img src="./assets/Group 12.png" alt="" class="easy-fast__content-steps-image">
+                        <div class="easy-fast__content-steps-content">
+                            <h3 class="easy-fast__content-steps-title">
+                                Choose Destination
+                            </h3>
+                            <p class="easy-fast__content-steps-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="easy-fast__content-step">
+                        <img src="./assets/Group 11.png" alt="" class="easy-fast__content-steps-image">
+                        <div class="easy-fast__content-steps-content">
+                            <h3 class="easy-fast__content-steps-title">
+                                Choose Destination
+                            </h3>
+                            <p class="easy-fast__content-steps-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="easy-fast__image-container">
+                <img src="./assets/Image.png" alt="" class="easy-fast__content-image">
+            </div>
+        </section>
+
+        <section class="used-by">
+            <div class="used-by__brand">
+                <img src="./assets/image 27.png" alt="" class="used-by__brand-image">
+            </div>
+            <div class="used-by__brand">
+                <img src="./assets/image 28.png" alt="" class="used-by__brand-image">
+            </div>
+            <div class="used-by__brand">
+                <img src="./assets/image 29.png" alt="" class="used-by__brand-image">
+            </div>
+            <div class="used-by__brand">
+                <img src="./assets/image 30.png" alt="" class="used-by__brand-image">
+            </div>
+            <div class="used-by__brand">
+                <img src="./assets/image 31.png" alt="" class="used-by__brand-image">
+            </div>
+        </section>
+
+        <section>
+            <!-- Slider -->
+            <!-- <div class="slide">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked">
+                    <div class="slide-item">
+                        <img src="./assets/image 27.png">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="./assets/image 28.png">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="./assets/image 29.png">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="./assets/image 30.png">
+                    </div>
+
+                    <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <img src="./assets/image 31.png">
+                    </div>
+
+                    <label for="slide-5" class="slide-control prev control-1">‹</label>
+                    <label for="slide-2" class="slide-control next control-1">›</label>
+
+                    <label for="slide-1" class="slide-control prev control-2">‹</label>
+                    <label for="slide-3" class="slide-control next control-2">›</label>
+
+                    <label for="slide-2" class="slide-control prev control-3">‹</label>
+                    <label for="slide-4" class="slide-control next control-3">›</label>
+
+                    <label for="slide-3" class="slide-control prev control-4">‹</label>
+                    <label for="slide-5" class="slide-control next control-4">›</label>
+
+                    <label for="slide-4" class="slide-control prev control-5">‹</label>
+                    <label for="slide-1" class="slide-control next control-5">›</label>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-5" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
+                </div>
+            </div> -->
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__icon-container">
+                <img src="./assets/Group 77.png" class="subscribe__icon" alt="Subscribe icon">
+            </div>
+
+            <h2 class="subscribe__title">
+                Subscribe to get information, latest news and other interesting offers about Jadoo
+            </h2>
+
+            <form class="subscribe__form">
+                <div class="subscribe__form-input">
+                    <span class="material-symbols-rounded subscribe__form-icon">
+                        mail
+                    </span>
+                    <input type="email" placeholder="Your email" class="subscribe__form-email">
+                </div>
+
+                <button type="submit" class="subscribe__form-button">
+                    Subscribe
+                </button>
+            </form>
+        </section>
+    </body>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <section class="footer__logo">
+                <img src="./assets/Logo.png" alt="">
+                <p>Book your trip in minute, get full Control for much longer.
+                </p>
+            </section>
+            <section>
+                <span>Company</span>
+                <ul>
+                    <li>About</li>
+                    <li>Careers</li>
+                    <li>Mobile</li>
+                </ul>
+            </section>
+            <section>
+                <span>Contact</span>
+                <ul>
+                    <li>Help/FAQ</li>
+                    <li>Press</li>
+                    <li>Affilates</li>
+                </ul>
+            </section>
+            <section>
+                <span>More</span>
+                <ul>
+                    <li>Airlinefees</li>
+                    <li>Airline</li>
+                    <li>Low fare tips</li>
+                </ul>
+            </section>
+            <section>
+                <div>
+                    <img src="./assets/Social.png" alt="">
+                    <img src="./assets/Social (1).png" alt="">
+                    <img src="./assets/Social (2).png" alt="">
+                </div>
+                <p class="footer__app-text">
+                    Discover our app
+                </p>
+                <div>
+                    <img src="./assets/Google Play.png" alt="">
+                    <img src="./assets/Play Store.png" alt="">
+                </div>
+            </section>
+        </div>
+        <p class="footer__copy">
+            All rights reserved@jadoo.co
+        </p>
+    </footer>
 </body>
+
 </html>
