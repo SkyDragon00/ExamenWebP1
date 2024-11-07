@@ -87,58 +87,84 @@ $subscribe-background: rgba(223, 215, 249, 0.2);
 
 .content {
     .hero {
-        margin-top: 100px;
+        padding-top: 60px;
+        width: 100%;
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
 
-        .hero__subtitle {
-            font-size: 12px;
-            font-weight: 700;
-            color: $secondary-color;
-            max-width: 45%;
-        }
+        .column-text {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
 
-        .hero__title {
-            max-width: 40%;
-            font-size: 60px;
-            font-weight: 700;
-            color: $accent-color;
-        }
-
-        .hero__description {
-            max-width: 30%;
-            font-size: 16px;
-            font-weight: 400;
-            margin-top: 30px;
+            .hero__subtitle {
+                font-size: 12px;
+                font-weight: 700;
+                color: $secondary-color;
+            }
+    
+            .hero__title {
+                font-size: 60px;
+                font-weight: 700;
+                color: $accent-color;
+            }
+    
+            .hero__description {
+                font-size: 16px;
+                font-weight: 400;
+                margin-top: 30px;
+            }
+    
+            .hero__buttons {
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+    
+                .hero__button {
+                    border: none;
+                    border-radius: 5px;
+                    padding: 13px 20px;
+                    background-color: $primary-color;
+                    color: white;
+                }
+            }
         }
 
         .hero__image {
-            position: absolute;
+            position: relative;
             top: 0;
             right: 0;
-            z-index: -1;
+            width: 60%;
         }
+    }
 
-        .hero__buttons {
-            display: flex;
-            align-items: center;
-            margin-top: 30px;
+    .Hero__btn--primary {
+        background-color: #f1a501;
+        color: #fff;
+        padding: 0% 4%;
+        height: 3rem;
+        border-radius: 10px;
+        border: none;
+        margin-right: 32px;
+        box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878);
+    }
 
-            .hero__button {
-                border: none;
-                border-radius: 5px;
-                padding: 13px 20px;
-                background-color: $primary-color;
-                color: white;
-            }
-
-            .hero__play-demo {
-                display: flex;
-                align-items: center;
-                margin-left: 20px;
-                box-shadow: 0px 0px 16px #df6951;
-            }
-        }
+    .Hero__btn--icon {
+        background-color: #df6951;
+        color: white;
+        width: 3.4rem;
+        height: 3rem;
+        align-items: center;
+        border: none;
+        padding: auto;
+        border-radius: 100px;
+        margin-right: 16px;
+        box-shadow: 0px 0px 16px #df6951;
     }
 
     .category {
@@ -371,6 +397,15 @@ $subscribe-background: rgba(223, 215, 249, 0.2);
         }
     }
 }
+
+.Hero__buttons {
+    display: flex;
+}
+
+.Hero__btnPlacement {
+    display: flex;
+}
+
 
 .footer {
     .footer__content {
@@ -676,4 +711,13 @@ $subscribe-background: rgba(223, 215, 249, 0.2);
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
         -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.img-absolute {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: auto;
 }
